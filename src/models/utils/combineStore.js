@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import createEnhancedMutation, { CommonActionTypes } from './createMutation';
+import createEnhancedMutation from './createMutation';
 
 Vue.use(Vuex);
 
@@ -11,7 +11,7 @@ for (let i = 0; i < keys.length; i++) {
   stores.push(context(keys[i]));
 }
 
-const rootStore = { modules: {} };
+const rootStore = { modules: {}, strict: true };
 stores.forEach((store) => {
   const model = store.default || store;
   const mod = {

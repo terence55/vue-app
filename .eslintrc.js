@@ -51,6 +51,7 @@ module.exports = {
     "max-len": 0,
     "no-use-before-define": 0,
     "object-shorthand": 0,
-    "no-param-reassign": 0
+    "no-param-reassign": 0,
+    "prefer-template": 0
   }
 }

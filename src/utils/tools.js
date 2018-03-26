@@ -21,7 +21,7 @@ export function getValue(o, s) {
       return;
     }
   }
-  return o;
+  return o; // eslint-disable-line consistent-return
 }
 
 export function getPathParams(url, pattern) {
